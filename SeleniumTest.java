@@ -29,7 +29,7 @@ public class SeleniumTest {
                 // Chrome driver options
                 ChromeOptions chromeDriverOptions = new ChromeOptions();
                 chromeDriverOptions.setHeadless(true);
-                chromeDriverOptions.addArguments("--no-sandbox");
+                //chromeDriverOptions.addArguments("--no-sandbox");
  
                 // Init Chrome driver
                 WebDriver driver = new ChromeDriver(chromeDriverService, chromeDriverOptions);
