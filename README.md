@@ -2,10 +2,14 @@
 
 Useful scripts for tests with Selenium.
 
-## Compiling with Selenium Server jar & Testng jar
+## Compiling with Selenium Server jar & TestNG jar
 
-javac -cp /opt/selenium-server.jar:/opt/testng.jar:. SeleniumTest.java
+Compile your Java class with a classpath that points to your Selenium Server jar, TestNG jar & local Java class.
 
-## Running with Selenium Sever jar & Testng jar
+    javac -cp /opt/selenium-server.jar:/opt/testng.jar:. SeleniumTest.java
 
-java -cp /opt/selenium-server.jar:/opt/testng.jar:. SeleniumTest
+## Running with Selenium Sever jar & TestNG jar
+
+Compile your Java class with a classpath that points to your Selenium Server jar, TestNG jar & local Java bin.
+
+    java -cp /opt/selenium-server.jar:/opt/testng.jar:. SeleniumTest
