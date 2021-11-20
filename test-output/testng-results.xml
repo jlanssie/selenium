@@ -2,24 +2,24 @@
 <testng-results total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-11-20T17:40:12Z" name="Suite1" finished-at="2021-11-20T17:40:16Z" duration-ms="3366">
+  <suite started-at="2021-11-20T18:04:29Z" name="Suite1" finished-at="2021-11-20T18:04:31Z" duration-ms="2477">
     <groups>
     </groups>
-    <test started-at="2021-11-20T17:40:12Z" name="Sample test" finished-at="2021-11-20T17:40:16Z" duration-ms="3366">
+    <test started-at="2021-11-20T18:04:29Z" name="Sample test" finished-at="2021-11-20T18:04:31Z" duration-ms="2477">
       <class name="TestNGTest">
-        <test-method is-config="true" signature="setDriver()[pri:0, instance:TestNGTest@4a8355dd]" started-at="2021-11-20T18:40:12Z" name="setDriver" finished-at="2021-11-20T18:40:13Z" duration-ms="960" status="PASS">
+        <test-method is-config="true" signature="setDriver()[pri:0, instance:TestNGTest@4a8355dd]" started-at="2021-11-20T19:04:29Z" name="setDriver" finished-at="2021-11-20T19:04:29Z" duration-ms="652" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setDriver -->
-        <test-method signature="getUrl()[pri:0, instance:TestNGTest@4a8355dd]" started-at="2021-11-20T18:40:13Z" name="getUrl" finished-at="2021-11-20T18:40:16Z" duration-ms="2309" status="PASS">
+        <test-method signature="getUrl()[pri:0, instance:TestNGTest@4a8355dd]" started-at="2021-11-20T19:04:29Z" name="getUrl" finished-at="2021-11-20T19:04:31Z" duration-ms="1696" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getUrl -->
-        <test-method signature="urlContainsString()[pri:0, instance:TestNGTest@4a8355dd]" started-at="2021-11-20T18:40:16Z" name="urlContainsString" finished-at="2021-11-20T18:40:16Z" duration-ms="18" status="PASS">
+        <test-method signature="urlContainsString()[pri:0, instance:TestNGTest@4a8355dd]" started-at="2021-11-20T19:04:31Z" name="urlContainsString" finished-at="2021-11-20T19:04:31Z" duration-ms="48" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- urlContainsString -->
-        <test-method is-config="true" signature="killDriver()[pri:0, instance:TestNGTest@4a8355dd]" started-at="2021-11-20T18:40:16Z" name="killDriver" finished-at="2021-11-20T18:40:16Z" duration-ms="71" status="PASS">
+        <test-method is-config="true" signature="killDriver()[pri:0, instance:TestNGTest@4a8355dd]" started-at="2021-11-20T19:04:31Z" name="killDriver" finished-at="2021-11-20T19:04:31Z" duration-ms="72" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killDriver -->
