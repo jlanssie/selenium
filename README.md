@@ -18,7 +18,7 @@ Run your Java class with a classpath that points to your Selenium Server jar & l
     java -cp /opt/selenium-server.jar:. SeleniumTest
 
 
-## Seleniun Server & TestNG
+## Selenium Server & TestNG
 
 ### Compiling with Selenium Server & TestNG
 
