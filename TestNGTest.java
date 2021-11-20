@@ -14,11 +14,12 @@ import org.testng.annotations.*;
  
 public class TestNGTest {
         public static WebDriver driver;
+        public static Logger logger = Logger.getLogger("org.openqa.selenium");
 
         @BeforeTest
         public void setDriver() throws IOException, InterruptedException {
                 // Selenium logging
-                java.util.logging.Logger.getLogger("org.openqa.selenium").setLevel(Level.OFF);
+                logger.setLevel(Level.OFF);
 
                 // Chrome options
                 System.setProperty("webdriver.chrome.driver", "/opt/chromedriver/chromedriver");
