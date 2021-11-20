@@ -8,13 +8,17 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.service.DriverService;
- 
-public class SeleniumTest {
-        public String url = "https://www.jeremylanssiers.com";
 
-        public static void main(String[] args) throws IOException, InterruptedException {
+import org.testng.Assert;
+import org.testng.annotations.*;
+ 
+public class TestNGTest {
+        public static WebDriver driver;
+
+        @BeforeTest
+        public void setDriver() throws IOException, InterruptedException {
                 // Selenium logging
-                java.util.logging.Logger.getLogger("org.openqa.selenium").setLevel(Level.SEVERE);
+                java.util.logging.Logger.getLogger("org.openqa.selenium").setLevel(Level.OFF);
 
                 // Chrome options
                 System.setProperty("webdriver.chrome.driver", "/opt/chromedriver/chromedriver");
@@ -32,20 +36,24 @@ public class SeleniumTest {
                 //chromeDriverOptions.addArguments("--no-sandbox");
  
                 // Init Chrome driver
-                WebDriver driver = new ChromeDriver(chromeDriverService, chromeDriverOptions);
+                driver = new ChromeDriver(chromeDriverService, chromeDriverOptions);
+        }
 
-                // Run Chrome driver
+        @Test (priority=1) 
+        public void getUrl() {
+                // Chrome driver gets url
                 driver.get("https://www.jeremylanssiers.com");
- 
-                //Thread.sleep(1000);
+        }
 
-                if (driver.getPageSource().contains("Jeremy")) {
-                        System.out.println("Pass");
-                } else {
-                        System.out.println("Fail");
-                }
+        @Test (priority=2) 
+        public void urlContainsString() {
+                // Chrome driver loads page source code and checks if it contains a string
+                driver.getPageSource().contains("Jeremy");
+        }
 
+        @AfterTest 
+        public void killDriver() {
                 // Kill Chrome driver
-                driver.quit();
+               driver.quit(); 
         }
 }
