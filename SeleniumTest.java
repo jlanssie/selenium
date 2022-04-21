@@ -35,11 +35,11 @@ public class SeleniumTest {
                 WebDriver driver = new ChromeDriver(chromeDriverService, chromeDriverOptions);
 
                 // Run Chrome driver
-                driver.get("https://www.jeremylanssiers.com");
+                driver.get("https://www.google.be/");
  
                 //Thread.sleep(1000);
 
-                if (driver.getPageSource().contains("Jeremy")) {
+                if (driver.getPageSource().contains("google")) {
                         System.out.println("Pass");
                 } else {
                         System.out.println("Fail");
